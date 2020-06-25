@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Icon, Label, Menu, Table, Dropdown } from "semantic-ui-react";
 import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ModalEdite from "./EditeUser";
 import {
@@ -16,6 +17,7 @@ class VueUser extends Component {
   render() {
     return (
       <div className="tab">
+        <Link to="#">
         <Dropdown
           text="Ajouter un utilisateur"
           icon="add user"
@@ -24,6 +26,7 @@ class VueUser extends Component {
           button
           className="icon"
         ></Dropdown>
+        </Link>
         <Table celled>
           <Table.Header>
             <Table.Row>
